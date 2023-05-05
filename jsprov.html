@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+    <div>
+        <h1 id="test"></h1>
+    </div>
+    <script>
+
+    var demoElement = document.getElementById("test");
+    demoElement.innerHTML = "red"
+      </script>
+
+    <div id="demo"></div>
+    <script>
+    function showdemo()
+
+var demoElement = document.getElementById("demo");
+demoElement.innerHTML = "Hej"
+
+</script>
+
+
+
+    <script>
+function multiplyNumbers(num1, num2) {
+
+result = num1 * num2;
+
+return result;
+
+}
+
+{
+var num1  = parseFloat(prompt("Ange det första numret:"));
+
+var num2 = parseFloat(prompt("Ange det andra numret:"));
+
+var multiplyResult = multiplyNumbers(num1, num2);
+
+
+alert("Resultatet av summan är: " + multiplyResult);
+}
+</script>
+
+
+
+
+
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Exempel på formulär</title>
+  </head>
+  <body>
+    <form>
+      <label for="text-input">Ange text:</label>
+      <input type="text" id="text-input">
+      <button type="button" onclick="showText()">Visa text</button>
+    </form>
+    
+    <script> 
+      function showText() {
+        let text = document.getElementById("text-input").value;
+        alert("Du angav följande text: " + text);//Denna vill inte fungera av någon anledning, jag tror att jag har gjort rätt
+      }
+    </script>
+  </body>
+</html>
